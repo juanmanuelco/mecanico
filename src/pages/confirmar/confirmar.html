@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Confirmar mi cuenta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div class="centrado">
+      <h1 >Ingrese su email</h1>
+      <ion-img  height="100px" width="100px"  src="assets/imgs/confirmar.png"></ion-img>
+      <p>Se le enviará un link a su email donde podrá confirmar su cuenta</p>
+      <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mail_confirmar"></ion-input>
+      </ion-item>
+      <div class="div_margen_bt">
+        <button ion-button full (click)="Reconfirmar()" [disabled]="!reg_status" >Confirmar</button>
+        <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
+      </div>
+  </div>
+  
+  
+</ion-content>

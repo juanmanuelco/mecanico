@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro de taller mecánico</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="centrado">
+    <h1>Registro</h1>
+    <ion-img height="110px" width="100px" (click)="escogerLogotipo()" [src]="picToView"></ion-img>
+    <ion-input style="display: none" type="text" [(ngModel)]="txt_taller_logo"></ion-input>
+    <p>Click en la imágen para escoger logotipo</p>
+    <ion-item class="centrado">
+    <div (click)="ubicar()">
+      <label for="">Click aqui para escoger su ubicación</label>
+      <p>{{txt_taller_ubicacion}}</p>
+    </div>
+  </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Nombre del taller</ion-label>
+      <ion-input aria-placeholder="Nombre" type="text" [(ngModel)]="txt_taller_nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Descripción del taller</ion-label>
+      <ion-textarea maxlenght="100" aria-placeholder="Nombre" type="text" [(ngModel)]="txt_taller_descripcion"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Email</ion-label>
+      <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_taller_mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Contraseña</ion-label>
+      <ion-input aria-placeholder="Contraseña" type="password" [(ngModel)]="txt_taller_password"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label color="primary" floating>Confirmar contraseña</ion-label>
+      <ion-input aria-placeholder="Contraseña" type="password" [(ngModel)]="txt_taller_rpassword"></ion-input>
+    </ion-item>
+    <button style="margin-top:12px" ion-button  (click)="guardarTaller()" [disabled]="!reg_status">Guardar</button>
+    <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
+  </div>
+</ion-content>

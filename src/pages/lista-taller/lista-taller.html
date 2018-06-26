@@ -1,0 +1,57 @@
+<!--
+  Generated template for the ListaAdminPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>
+      Administración
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button full>Incidencias</button>
+      <button ion-button full [navPush]="cambTaller">Cambiar contraseña</button>
+      <button ion-button full (click)="logout()">Cerrar sesión</button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Registros
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button full [navPush]="regMecanico">Mecánico</button>
+      <button ion-button full>Stock de repuestos</button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Modificacion y eliminación
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button full [navPush]="modEliMecanico">Mecánico</button>
+      <button ion-button full>Repuestos</button>
+      <button ion-button full>Darse de alta</button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+        Reportes
+      </ion-card-header>
+      <ion-card-content>
+        <button ion-button full>Incidencias</button>
+        <button ion-button full>Repuestos usados</button>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>

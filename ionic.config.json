@@ -1,0 +1,8 @@
+{
+  "name": "mecanico",
+  "app_id": "0fea6b5f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

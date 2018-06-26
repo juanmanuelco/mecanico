@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mecánicos registrados</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item style="margin-bottom:12px">
+    <ion-input placeholder="Buscar taller" [(ngModel)]="parametro" type="text" (keyup)="buscarMecanico()"></ion-input>
+    <ion-label color="primary">Buscar</ion-label>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row class="centrado">
+      <ion-col col-4> <b>Email</b> </ion-col>
+      <ion-col col-3><b>Nombre</b></ion-col>
+      <ion-col col-5><b>Acciones</b></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let mecanico of mecanicos" class="mecan-reg" style="border-bottom: 1px dashed rgb(100, 95, 95); padding: 4px;">
+        <ion-col col-4><i class="mec-nom">{{mecanico.username}}</i></ion-col>
+        <ion-col col-3><i class="mec-nom">{{mecanico.nombre}}</i></ion-col>
+        <ion-col col-5>
+            <ion-buttons end>
+                <button ion-button icon-only>
+                  <ion-icon ios="ios-create" md="md-create" name="create"></ion-icon>
+                </button>
+                <button ion-button icon-only color="danger" (click)="eliminarMecanico(mecanico.identidad)">
+                  <ion-icon name="trash" ios="ios-trash" md="md-trash"></ion-icon>
+                </button>
+              </ion-buttons>
+        </ion-col>
+    </ion-row> 
+  </ion-grid>
+</ion-content>

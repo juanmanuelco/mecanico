@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registrar mecánico</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="centrado">
+  <h1>Registro de mecánicos</h1>
+  <ion-item>
+    <ion-label color="primary">Taller mecánico</ion-label>
+    <ion-select [(ngModel)]="select_mecanico_taller">
+      <ion-option  *ngFor="let taller of talleres" [value]="taller.identidad">{{taller.nombre}}</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Nombre del mecánico</ion-label>
+    <ion-input aria-placeholder="Nombre" type="text" [(ngModel)]="txt_mecanico_nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Email del mecánico</ion-label>
+    <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mecanico_mail"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Contraseña</ion-label>
+    <ion-input aria-placeholder="Email" type="password" [(ngModel)]="txt_mecanico_password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Repetir contraseña</ion-label>
+    <ion-input aria-placeholder="Email" type="password" [(ngModel)]="txt_mecanico_rpassword"></ion-input>
+  </ion-item>
+  <div class="div_margen_bt">
+    <button ion-button full (click)="Registrar()" [disabled]="!reg_status">Registrar</button>
+  </div>
+  <ion-spinner name="crescent" *ngIf="status"></ion-spinner>
+</ion-content>

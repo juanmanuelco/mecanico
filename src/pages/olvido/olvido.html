@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>¿Olvidó su contraseña?</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div class="centrado">
+      <h1 >Ingrese su email</h1>
+      <ion-img  height="110px" width="100px"  src="assets/imgs/restore.png"></ion-img>
+      <p>Se le enviará un link a su email donde podrá recuperar su contraseña</p>
+      <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mail_olvido"></ion-input>
+      </ion-item>
+      <div class="div_margen_bt">
+        <button ion-button full (click)="Recuperar()" [disabled]="!reg_status" >Enviar</button>
+        <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
+      </div>
+  </div>
+  
+  
+</ion-content>

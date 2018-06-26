@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cambiar contraseña</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div class="centrado">
+      <h1 >Ahora puede cambiar su contraseña</h1>
+      <ion-img  height="110px" width="100px"  src="assets/imgs/restore.png"></ion-img>
+      <p>Ingrese su contraseña actual por seguridad</p>
+      <ion-item>
+        <ion-label color="primary" floating>Contraseña actual</ion-label>
+        <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_pass_cambiar"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary" floating>Nueva contraseña</ion-label>
+          <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_npass_cambiar"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" floating>Repetir nueva contraseña</ion-label>
+            <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_rnpass_cambiar"></ion-input>
+          </ion-item>
+      <div class="div_margen_bt">
+        <button ion-button full (click)="cambiarP()" [disabled]="!reg_status" >Enviar</button>
+        <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
+      </div>
+  </div>
+  
+  
+</ion-content>

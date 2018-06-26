@@ -1,0 +1,4 @@
+#Sun Jun 24 13:17:29 COT 2018
+base.0=D\:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+renamed.0=classes.dex
+file.0=D\:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex
