@@ -1,29 +1,28 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Nombre de la aplicación
+<ion-header  >
+  <ion-navbar  >
+    <ion-title class="titulo_principal">
+      PitsSpot
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="backgranund_">
   <div class="centrado">
-    <h1 class="centrado">Login</h1>
-    <ion-img height="100px" width="100px" src="assets/imgs/logotipo.png"></ion-img>
+    <ion-img class="logo_home" height="165px" width="130px" src="assets/imgs/logotipo.png"></ion-img>
     <div class="margen-central">
-      <ion-item>
+      <ion-item class="txt_mail_login_">
         <ion-label color="primary" floating>Email</ion-label>
         <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mail_login"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="txt_password_login_">
         <ion-label color="primary" floating>Contraseña</ion-label>
-        <ion-input aria-placeholder="Contraseña" [(ngModel)]="txt_password_login" type="password"></ion-input>
+        <ion-input  aria-placeholder="Contraseña" [(ngModel)]="txt_password_login" type="password"></ion-input>
       </ion-item>
       <div class="div_margen_bt">
-        <button ion-button full (click)="logear()">Login</button>
+        <button class="btn_home" ion-button full (click)="logear()">Login</button>
       </div>
       <div class="div_margen_bt">
-        <button ion-button full [navPush]="regP">Registrarse</button>
+        <button class="btn_home" ion-button full [navPush]="regP">Registrarme</button>
       </div>
       <div class="div_margen_bt">
         <a href="#" [navPush]="olvP">¿Olvidó su contraseña?</a>

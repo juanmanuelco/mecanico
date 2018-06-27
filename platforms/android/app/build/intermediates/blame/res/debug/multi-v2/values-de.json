@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
+            "outputFile": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-de\\multiimagechooser_strings_de.xml",
+                    "source": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-de\\multiimagechooser_strings_de.xml",
                     "from": {
                         "startLines": "4,3,2,7,6,5",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "223,116,55,566,469,359",
+                        "startOffsets": "227,119,57,573,475,364",
                         "endColumns": "135,106,60,104,96,109",
-                        "endOffsets": "354,218,111,666,561,464"
+                        "endOffsets": "358,221,113,673,567,469"
                     },
                     "to": {
                         "startLines": "21,22,23,24,25,26",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\juanm\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\bff234cf9defd35f878b608703808550\\res\\values-de\\values-de.xml",
+                    "source": "C:\\Users\\Jefferson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\d2e808910ac860642e322a754be8b25d\\res\\values-de\\values-de.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

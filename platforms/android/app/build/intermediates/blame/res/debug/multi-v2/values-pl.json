@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\juanm\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\bff234cf9defd35f878b608703808550\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\Jefferson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\d2e808910ac860642e322a754be8b25d\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,13 +21,13 @@
                     }
                 },
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-pl\\multiimagechooser_strings_pl.xml",
+                    "source": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-pl\\multiimagechooser_strings_pl.xml",
                     "from": {
                         "startLines": "8,9,4,3,2,7,6,5",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "591,655,198,116,55,497,406,314",
+                        "startOffsets": "599,664,202,119,57,504,412,319",
                         "endColumns": "63,56,115,81,60,93,90,91",
-                        "endOffsets": "650,707,309,193,111,586,492,401"
+                        "endOffsets": "658,716,313,196,113,593,498,406"
                     },
                     "to": {
                         "startLines": "21,22,23,24,25,26,27,28",

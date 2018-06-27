@@ -6,25 +6,26 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding>
+<ion-content padding  class="backgranund_">
   <div class="centrado">
-      <h1 >Ahora puede cambiar su contraseña</h1>
-      <ion-img  height="110px" width="100px"  src="assets/imgs/restore.png"></ion-img>
-      <p>Ingrese su contraseña actual por seguridad</p>
-      <ion-item>
-        <ion-label color="primary" floating>Contraseña actual</ion-label>
+      <ion-img class="logo_home" height="130px" width="100px" src="assets/imgs/logotipo.png" style="width: 90px; height: 60px;"></ion-img>
+      <h1 class="titulo_principal" >CAMBIA TU CONTRASEÑA</h1>
+      <ion-img class="logo_home" height="80px" width="80px" src="assets/imgs/check2.png"></ion-img>
+      <p class="titulo_secundario">Ingrese su contraseña actual</p>
+      <ion-item class="txt_pass_cambiar">
+        <ion-label color="primary" >Contraseña actual</ion-label>
         <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_pass_cambiar"></ion-input>
       </ion-item>
-      <ion-item>
-          <ion-label color="primary" floating>Nueva contraseña</ion-label>
+      <ion-item class="txt_npass_cambiar">
+          <ion-label color="primary" >Nueva contraseña</ion-label>
           <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_npass_cambiar"></ion-input>
         </ion-item>
-        <ion-item>
-            <ion-label color="primary" floating>Repetir nueva contraseña</ion-label>
+        <ion-item class="txt_rnpass_cambiar">
+            <ion-label color="primary" >Repetir nueva contraseña</ion-label>
             <ion-input aria-placeholder="Pass" type="password" [(ngModel)]="txt_rnpass_cambiar"></ion-input>
           </ion-item>
       <div class="div_margen_bt">
-        <button ion-button full (click)="cambiarP()" [disabled]="!reg_status" >Enviar</button>
+        <button class="btn_cambio_password" ion-button full (click)="cambiarP()" [disabled]="!reg_status" >Enviar</button>
         <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
       </div>
   </div>

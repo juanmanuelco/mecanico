@@ -1,3 +1,25 @@
 page-home {
-
+    .backgranund_{
+        background: linear-gradient(55deg, #313030 50%, #343333 50%);
+    }
+    .btn_home{      
+        background:#202020;
+        font-family: Tw Cen MT Regular;
+        color: white;
+        border-radius: 5px;
+    }
+    .txt_password_login_{
+        margin-top: 15px;
+    }
+    .txt_mail_login_{
+        margin-top: 10px;
+    }
+    .titulo_principal{
+        font-family:Tw Cen MT Bold Italic;
+        color: white;
+    }
+    .logo_home{
+        background: transparent !important;
+    }
 }
+

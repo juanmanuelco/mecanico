@@ -25691,8 +25691,141 @@ ion-navbar.toolbar {
   margin-top: 12px;
 }
 
+.toolbar-background {
+  background: #202020;
+}
+
+.toolbar-title.toolbar-title-md,
+.toolbar-title.toolbar-title-ios,
+.toolbar-title.toolbar-title-wp {
+  color: #f4f4f4;
+}
+
+page-cambiar-usuario .backgranund_ {
+  background: linear-gradient(55deg, #313030 50%, #343333 50%);
+}
+
+page-cambiar-usuario .btn_cambio_password {
+  background: #202020;
+  font-family: Tw Cen MT Regular;
+  color: white;
+  border-radius: 5px;
+}
+
+page-cambiar-usuario .txt_pass_cambiar {
+  margin-top: 15px;
+}
+
+page-cambiar-usuario .txt_npass_cambiar {
+  margin-top: 10px;
+}
+
+page-cambiar-usuario .txt_rnpass_cambiar {
+  margin-top: 10px;
+}
+
+page-cambiar-usuario .titulo_principal {
+  font-family: Tw Cen MT Bold Italic;
+  color: white;
+}
+
+page-cambiar-usuario .titulo_secundario {
+  font-family: Tw Cen MT Regular;
+  color: white;
+}
+
+page-cambiar-usuario .logo_home {
+  background: transparent !important;
+}
+
+page-confirmar .backgranund_ {
+  background: linear-gradient(55deg, #313030 50%, #343333 50%);
+}
+
+page-confirmar .btn_confirmar_cuenta {
+  background: #202020;
+  font-family: Tw Cen MT Regular;
+  color: white;
+  border-radius: 5px;
+}
+
+page-confirmar .txt_mail_confirmar {
+  margin-top: 15px;
+}
+
+page-confirmar .titulo_principal {
+  font-family: Tw Cen MT Bold Italic;
+  color: white;
+}
+
+page-confirmar .titulo_secundario {
+  font-family: Tw Cen MT Regular;
+  color: white;
+}
+
+page-confirmar .logo_home {
+  background: transparent !important;
+}
+
+page-home .backgranund_ {
+  background: linear-gradient(55deg, #313030 50%, #343333 50%);
+}
+
+page-home .btn_home {
+  background: #202020;
+  font-family: Tw Cen MT Regular;
+  color: white;
+  border-radius: 5px;
+}
+
+page-home .txt_password_login_ {
+  margin-top: 15px;
+}
+
+page-home .txt_mail_login_ {
+  margin-top: 10px;
+}
+
+page-home .titulo_principal {
+  font-family: Tw Cen MT Bold Italic;
+  color: white;
+}
+
+page-home .logo_home {
+  background: transparent !important;
+}
+
 page-mapa-obtener #map {
   height: 85% !important;
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+page-olvido .backgranund_ {
+  background: linear-gradient(55deg, #313030 50%, #343333 50%);
+}
+
+page-olvido .btn_olvidar_password {
+  background: #202020;
+  font-family: Tw Cen MT Regular;
+  color: white;
+  border-radius: 5px;
+}
+
+page-olvido .txt_mail_olvido {
+  margin-top: 15px;
+}
+
+page-olvido .titulo_principal {
+  font-family: Tw Cen MT Bold Italic;
+  color: white;
+}
+
+page-olvido .titulo_secundario {
+  font-family: Tw Cen MT Regular;
+  color: white;
+}
+
+page-olvido .logo_home {
+  background: transparent !important;
 }

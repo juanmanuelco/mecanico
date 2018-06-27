@@ -24,3 +24,16 @@
 .div_margen_bt{
     margin-top: 12px;
 }
+.toolbar-background {
+    background:#202020;
+}
+.toolbar-title.toolbar-title-md, 
+.toolbar-title.toolbar-title-ios, 
+.toolbar-title.toolbar-title-wp { color: map-get($colors, light); }
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #fff,
+  dark:       #222,
+);

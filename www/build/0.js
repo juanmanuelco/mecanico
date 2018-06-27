@@ -120,7 +120,7 @@ var MapaObtenerPage = /** @class */ (function () {
     ], MapaObtenerPage.prototype, "mapElement", void 0);
     MapaObtenerPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mapa-obtener',template:/*ion-inline-start:"D:\proyectos\mecanico\mecanico_app_v5\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Seleccione su ubicación</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="centrado">\n  <label for="" class="centrado">Elija la ubicación del taller y de en aceptar</label>\n  <button ion-button (click)="dismiss()">Aceptar</button>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"D:\proyectos\mecanico\mecanico_app_v5\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/,
+            selector: 'page-mapa-obtener',template:/*ion-inline-start:"C:\Users\Jefferson\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Seleccione su ubicación</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="centrado">\n\n  <label for="" class="centrado">Elija la ubicación del taller y de en aceptar</label>\n\n  <button ion-button (click)="dismiss()">Aceptar</button>\n\n  <div #map id="map"></div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Jefferson\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],

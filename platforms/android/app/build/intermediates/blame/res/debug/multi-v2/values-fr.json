@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\juanm\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\bff234cf9defd35f878b608703808550\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\Jefferson\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\d2e808910ac860642e322a754be8b25d\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,13 +21,13 @@
                     }
                 },
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v5\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-fr\\multiimagechooser_strings_fr.xml",
+                    "source": "C:\\Users\\Jefferson\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-fr\\multiimagechooser_strings_fr.xml",
                     "from": {
                         "startLines": "3,2,1,4",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "167,79,16,308",
+                        "startOffsets": "170,81,17,312",
                         "endColumns": "140,87,62,103",
-                        "endOffsets": "303,162,74,407"
+                        "endOffsets": "306,164,75,411"
                     },
                     "to": {
                         "startLines": "21,22,23,24",
