@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 296:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListaAdminPageModule", function() { return ListaAdminPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lista_admin__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lista_admin__ = __webpack_require__(307);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ListaAdminPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 308:
+/***/ 307:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ var ListaAdminPage = /** @class */ (function () {
     };
     ListaAdminPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lista-admin',template:/*ion-inline-start:"C:\Users\Jefferson\mecanico\src\pages\lista-admin\lista-admin.html"*/'<!--\n\n  Generated template for the ListaAdminPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Menú</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Administración\n\n    </ion-card-header>\n\n    <ion-card-content>\n\n      <button ion-button full>Incidencias</button>\n\n      <button ion-button full [navPush]="cambAdm">Cambiar contraseña</button>\n\n      <button ion-button full (click)="logout()">Cerrar sesión</button>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Registros\n\n    </ion-card-header>\n\n    <ion-card-content>\n\n      <button ion-button full [navPush]="regTaller">Taller mecánico</button>\n\n      <button ion-button full [navPush]="regMecanico">Mecánico</button>\n\n      <button ion-button full>Proveedores</button>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Modificacion y eliminación\n\n    </ion-card-header>\n\n    <ion-card-content>\n\n      <button ion-button full [navPush]="ModEliTaller">Taller mecánico</button>\n\n      <button ion-button full [navPush]="ModEliMecanico">Mecánico</button>\n\n      <button ion-button full>Proveedores</button>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card>\n\n      <ion-card-header>\n\n        Reportes\n\n      </ion-card-header>\n\n      <ion-card-content>\n\n        <button ion-button full>Ventas</button>\n\n        <button ion-button full>Incidencias</button>\n\n        <button ion-button full>Datos de uso</button>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Jefferson\mecanico\src\pages\lista-admin\lista-admin.html"*/,
+            selector: 'page-lista-admin',template:/*ion-inline-start:"D:\proyectos\mecanico\mecanico_app_v7\mecanico\src\pages\lista-admin\lista-admin.html"*/'<!--\n  Generated template for the ListaAdminPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Menú</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card>\n    <ion-card-header>\n      Administración\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full>Incidencias</button>\n      <button ion-button full [navPush]="cambAdm">Cambiar contraseña</button>\n      <button ion-button full (click)="logout()">Cerrar sesión</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Registros\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full [navPush]="regTaller">Taller mecánico</button>\n      <button ion-button full [navPush]="regMecanico">Mecánico</button>\n      <button ion-button full>Proveedores</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Modificacion y eliminación\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full [navPush]="ModEliTaller">Taller mecánico</button>\n      <button ion-button full [navPush]="ModEliMecanico">Mecánico</button>\n      <button ion-button full>Proveedores</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n      <ion-card-header>\n        Reportes\n      </ion-card-header>\n      <ion-card-content>\n        <button ion-button full>Ventas</button>\n        <button ion-button full>Incidencias</button>\n        <button ion-button full>Datos de uso</button>\n      </ion-card-content>\n    </ion-card>\n\n</ion-content>'/*ion-inline-end:"D:\proyectos\mecanico\mecanico_app_v7\mecanico\src\pages\lista-admin\lista-admin.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],

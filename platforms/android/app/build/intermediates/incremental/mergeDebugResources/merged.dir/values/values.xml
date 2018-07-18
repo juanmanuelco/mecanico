@@ -209,7 +209,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="activity_name">@string/launcher_name</string>
-    <string name="app_name">mecanico</string>
+    <string name="app_name">PitsPot</string>
     <string name="discard" translatable="false">Cancel</string>
     <string name="done" translatable="false">OK</string>
     <string name="error_database">There was an error opening the images database. Please report the problem.</string>

@@ -1,2 +1,0 @@
-# mecanico
-App ionic

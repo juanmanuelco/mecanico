@@ -6,12 +6,7 @@ import { PrincipalMecanicoPage } from '../../pages/principal-mecanico/principal-
 import { PrincipalTallerPage } from '../../pages/principal-taller/principal-taller';
 import { PrincipalUsuarioPage } from '../../pages/principal-usuario/principal-usuario';
 
-/*
-  Generated class for the ValinternoProvider provider.
 
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class ValinternoProvider {
   MENSAJES = [
@@ -151,4 +146,5 @@ export class ValinternoProvider {
       }).present();
     })
   }
+
 }

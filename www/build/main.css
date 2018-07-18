@@ -25829,3 +25829,31 @@ page-olvido .titulo_secundario {
 page-olvido .logo_home {
   background: transparent !important;
 }
+
+page-registro .backgranund_ {
+  background: linear-gradient(55deg, #313030 50%, #343333 50%);
+}
+
+page-registro .btn_registrar_cuenta {
+  background: #202020;
+  font-family: Tw Cen MT Regular;
+  color: white;
+  border-radius: 5px;
+}
+
+page-registro .titulo_principal {
+  font-family: Tw Cen MT Bold Italic;
+  color: white;
+}
+
+page-registro .logo_registro {
+  background: transparent !important;
+}
+
+page-registro .txt {
+  margin-top: 15px;
+}
+
+page-registro .txt_final {
+  margin-top: 10px;
+}

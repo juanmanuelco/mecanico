@@ -22,10 +22,10 @@
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-sqlite-storage": {
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-geolocation": {
+    "cordova-sqlite-storage": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-telerik-imagepicker": {

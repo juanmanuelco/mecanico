@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 304:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,9 @@ var PrincipalUsuarioPageModule = /** @class */ (function () {
     }
     PrincipalUsuarioPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [],
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__principal_usuario__["a" /* PrincipalUsuarioPage */],
+            ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__principal_usuario__["a" /* PrincipalUsuarioPage */]),
             ],

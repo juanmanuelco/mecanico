@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HttpProvider {
+
   url = 'https://mecanico.herokuapp.com'
   //url = 'http://192.168.1.22:3000'
   constructor(public http: Http) {
@@ -58,4 +59,5 @@ export class HttpProvider {
     var cuerpo = { identidad: identidad }
     return this.http.post(`${this.url}/admin/eliminar-mecanico`, cuerpo)
   }
+
 }

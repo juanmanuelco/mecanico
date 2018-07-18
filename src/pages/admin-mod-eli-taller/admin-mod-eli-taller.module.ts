@@ -4,7 +4,7 @@ import { AdminModEliTallerPage } from './admin-mod-eli-taller';
 
 @NgModule({
   declarations: [
-    //AdminModEliTallerPage,
+    AdminModEliTallerPage,
   ],
   imports: [
     IonicPageModule.forChild(AdminModEliTallerPage),

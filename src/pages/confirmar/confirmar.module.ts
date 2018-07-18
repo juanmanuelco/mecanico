@@ -4,7 +4,7 @@ import { ConfirmarPage } from './confirmar';
 
 @NgModule({
   declarations: [
-    //ConfirmarPage,
+    ConfirmarPage,
   ],
   imports: [
     IonicPageModule.forChild(ConfirmarPage),

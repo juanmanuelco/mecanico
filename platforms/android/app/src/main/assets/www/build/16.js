@@ -1,6 +1,6 @@
 webpackJsonp([16],{
 
-/***/ 291:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,9 @@ var AdminModEliTallerPageModule = /** @class */ (function () {
     }
     AdminModEliTallerPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [],
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__admin_mod_eli_taller__["a" /* AdminModEliTallerPage */],
+            ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__admin_mod_eli_taller__["a" /* AdminModEliTallerPage */]),
             ],

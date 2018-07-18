@@ -4,7 +4,7 @@ import { TallerRegistroMecanicoPage } from './taller-registro-mecanico';
 
 @NgModule({
   declarations: [
-    //TallerRegistroMecanicoPage,
+    TallerRegistroMecanicoPage,
   ],
   imports: [
     IonicPageModule.forChild(TallerRegistroMecanicoPage),

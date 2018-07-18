@@ -4,7 +4,7 @@ import { PrincipalMecanicoPage } from './principal-mecanico';
 
 @NgModule({
   declarations: [
-    //PrincipalMecanicoPage,
+    PrincipalMecanicoPage,
   ],
   imports: [
     IonicPageModule.forChild(PrincipalMecanicoPage),

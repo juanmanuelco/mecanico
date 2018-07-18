@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { AdminModEliMecanicoPage } from './admin-mod-eli-mecanico';
 
-@NgModule({ 
+@NgModule({
   declarations: [
-    //AdminModEliMecanicoPage,
+    AdminModEliMecanicoPage,
   ],
   imports: [
     IonicPageModule.forChild(AdminModEliMecanicoPage),

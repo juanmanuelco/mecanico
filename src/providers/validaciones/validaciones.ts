@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { PrincipalAdminPage } from '../../pages/principal-admin/principal-admin';
 import { PrincipalMecanicoPage } from '../../pages/principal-mecanico/principal-mecanico';
@@ -8,8 +7,10 @@ import { AlertController, LoadingController} from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 
+
 @Injectable()
 export class ValidacionesProvider {
+
   MENSAJES = [
     /*E0*/ { t: 'Error de red', d: 'No se pudo establecer una conexión con el servidor' },
     /*E1*/ { t: 'Hay campos vacios', d: 'La información solicitada es obligatoria' },
@@ -153,5 +154,4 @@ export class ValidacionesProvider {
       }).present();
     })
   }
-
 }

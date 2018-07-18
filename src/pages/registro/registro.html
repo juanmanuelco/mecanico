@@ -13,29 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="backgranund_">
   <div class="centrado">
-    <h1 class="centrado">Registrate</h1>
-    <ion-img height="100px" width="100px" src="assets/imgs/logotipo.png"></ion-img>
+    <h1 class="centrado titulo_principal">Registrate</h1>
+    <ion-img height="100px" class="logo_registro" width="100px" src="assets/imgs/logotipo.png"></ion-img>
     <div class="margen-central">
-      <ion-item>
+      <ion-item class="txt">
         <ion-label color="primary" floating>Nombre completo</ion-label>
         <ion-input aria-placeholder="Nombre" [(ngModel)]="txt_nombre_registro"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="txt">
         <ion-label color="primary" floating>Email</ion-label>
         <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mail_registro"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="txt">
         <ion-label color="primary" floating>Contraseña</ion-label>
         <ion-input aria-placeholder="Contraseña" type="password" [(ngModel)]="txt_password_registro"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="txt_final">
           <ion-label color="primary" floating>Confirmar contraseña</ion-label>
           <ion-input aria-placeholder="Contraseña" type="password" [(ngModel)]="txt_rpassword_registro"></ion-input>
       </ion-item>
       <div class="div_margen_bt">
-          <button ion-button full (click)="Registrar()" [disabled]="!reg_status">Registrar</button>
+          <button ion-button full class="btn_registrar_cuenta" (click)="Registrar()" [disabled]="!reg_status">Registrar</button>
         </div>
         <ion-spinner name="crescent" *ngIf="status" ></ion-spinner>
     </div>

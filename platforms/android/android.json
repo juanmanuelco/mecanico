@@ -21,11 +21,11 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.sqlc.SQLitePlugin\" /></feature>",
+              "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
+              "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.sqlc.SQLitePlugin\" /></feature>",
               "count": 1
             },
             {
@@ -93,10 +93,10 @@
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-sqlite-storage": {
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-geolocation": {
+    "cordova-sqlite-storage": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-telerik-imagepicker": {
@@ -130,14 +130,6 @@
       ]
     },
     {
-      "id": "cordova-sqlite-storage.SQLitePlugin",
-      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-      "pluginId": "cordova-sqlite-storage",
-      "clobbers": [
-        "SQLitePlugin"
-      ]
-    },
-    {
       "id": "cordova-plugin-geolocation.geolocation",
       "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
       "pluginId": "cordova-plugin-geolocation",
@@ -150,6 +142,14 @@
       "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
       "pluginId": "cordova-plugin-geolocation",
       "runs": true
+    },
+    {
+      "id": "cordova-sqlite-storage.SQLitePlugin",
+      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+      "pluginId": "cordova-sqlite-storage",
+      "clobbers": [
+        "SQLitePlugin"
+      ]
     },
     {
       "id": "cordova-plugin-telerik-imagepicker.ImagePicker",
@@ -166,8 +166,8 @@
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-ionic-webview": "1.1.19",
     "cordova-plugin-ionic-keyboard": "2.0.5",
-    "cordova-sqlite-storage": "2.3.2",
     "cordova-plugin-geolocation": "4.0.1",
-    "cordova-plugin-telerik-imagepicker": "2.2.1"
+    "cordova-sqlite-storage": "2.3.3",
+    "cordova-plugin-telerik-imagepicker": "2.2.2"
   }
 }

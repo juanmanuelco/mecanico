@@ -4,7 +4,7 @@ import { AdminRegistroTallerPage } from './admin-registro-taller';
 
 @NgModule({
   declarations: [
-    //AdminRegistroTallerPage,
+    AdminRegistroTallerPage,
   ],
   imports: [
     IonicPageModule.forChild(AdminRegistroTallerPage),

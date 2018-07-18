@@ -1,3 +1,24 @@
 page-registro {
-
+    .backgranund_{
+        background: linear-gradient(55deg, #313030 50%, #343333 50%);
+    }
+    .btn_registrar_cuenta{
+        background:#202020;
+        font-family: Tw Cen MT Regular;
+        color: white;
+        border-radius: 5px;
+    }
+    .titulo_principal{
+        font-family:Tw Cen MT Bold Italic;
+        color: white;
+    }
+    .logo_registro{
+        background: transparent !important;
+    }
+    .txt{
+        margin-top: 15px;
+    }
+    .txt_final{
+        margin-top: 10px;
+    }
 }
