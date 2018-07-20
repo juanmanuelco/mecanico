@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\multiimagechooser_strings_en.xml",
+                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\multiimagechooser_strings_en.xml",
                     "from": {
                         "startLines": "8,9,4,3,2,7,6,5",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "588,652,194,116,55,492,403,312",
+                        "startOffsets": "596,661,198,119,57,499,409,317",
                         "endColumns": "63,56,117,77,60,95,88,90",
-                        "endOffsets": "647,704,307,189,111,583,487,398"
+                        "endOffsets": "655,713,311,192,113,590,493,403"
                     },
                     "to": {
                         "startLines": "212,213,214,215,217,218,219,220",
@@ -18,6 +18,25 @@
                         "startOffsets": "28708,28772,28829,28947,29084,29145,29241,29330",
                         "endColumns": "63,56,117,77,60,95,88,90",
                         "endOffsets": "28767,28824,28942,29020,29140,29236,29325,29416"
+                    }
+                },
+                {
+                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "3",
+                        "endColumns": "12",
+                        "endOffsets": "127"
+                    },
+                    "to": {
+                        "startLines": "1181",
+                        "startColumns": "4",
+                        "startOffsets": "90672",
+                        "endLines": "1182",
+                        "endColumns": "12",
+                        "endOffsets": "90741"
                     }
                 },
                 {
@@ -40,7 +59,7 @@
                     }
                 },
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -54,25 +73,6 @@
                         "startOffsets": "28599,28663,29025",
                         "endColumns": "63,44,58",
                         "endOffsets": "28658,28703,29079"
-                    }
-                },
-                {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "3",
-                        "endColumns": "12",
-                        "endOffsets": "124"
-                    },
-                    "to": {
-                        "startLines": "1181",
-                        "startColumns": "4",
-                        "startOffsets": "90672",
-                        "endLines": "1182",
-                        "endColumns": "12",
-                        "endOffsets": "90741"
                     }
                 }
             ]

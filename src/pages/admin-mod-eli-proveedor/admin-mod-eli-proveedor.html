@@ -1,0 +1,40 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Proveedores registrados</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-item style="margin-bottom:12px">
+      <ion-input placeholder="Buscar proveedor" [(ngModel)]="parametro" type="text" (keyup)="buscarProveedores()"></ion-input>
+      <ion-label color="primary">Buscar</ion-label>
+    </ion-item>
+    <table>
+      <tr *ngFor="let proveedor of proveedores" class="prov-reg" style="border-bottom: 1px dashed rgb(100, 95, 95); padding: 4px;">
+        <td style="width: 20%; padding: 6px;" >
+          <img [src]="proveedor.logotipo" width="100%" height="60px">
+        </td>
+        <td style="width: 40%; padding-left: 6px">
+          <i>
+            <b class="prov-nom">{{proveedor.nombre}}</b>
+          </i>
+        </td>
+        <td style="width: 40%">
+          <ion-buttons end>
+            <button ion-button icon-only (click)="modificarProveedor(proveedor.identidad, proveedor.nombre, proveedor.logotipo, proveedor.descripcion, proveedor.username, proveedor.paypal, proveedor.cuenta)" >
+              <ion-icon ios="ios-create" md="md-create" name="create"></ion-icon>
+            </button>
+            <button ion-button icon-only color="danger" (click)="eliminarProveedor(proveedor.identidad)">
+              <ion-icon name="trash" ios="ios-trash" md="md-trash"></ion-icon>
+            </button>
+          </ion-buttons>
+  
+        </td>
+      </tr>
+    </table>
+  
+  
+  </ion-content>

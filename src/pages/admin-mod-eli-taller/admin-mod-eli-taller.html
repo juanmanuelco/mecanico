@@ -3,7 +3,7 @@
   <ion-navbar>
     <ion-title>Talleres registrados</ion-title>
   </ion-navbar>
-
+ 
 </ion-header>
 
 
@@ -24,7 +24,7 @@
       </td>
       <td style="width: 40%">
         <ion-buttons end>
-          <button ion-button icon-only >
+          <button ion-button icon-only (click)="modificarTaller(taller.identidad, taller.nombre, taller.logotipo, taller.ubicacion, taller.descripcion, taller.username)" >
             <ion-icon ios="ios-create" md="md-create" name="create"></ion-icon>
           </button>
           <button ion-button icon-only color="danger" (click)="eliminarTaller(taller.identidad)">

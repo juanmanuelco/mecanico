@@ -1,0 +1,40 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>{{this.nombre}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+    <div class="centrado">
+      <h1>Modificación del proveedor</h1>
+      <ion-img height="110px" width="100px" (click)="escogerLogotipo()" [src]="picToView"></ion-img>
+      <ion-input style="display: none" type="text" [(ngModel)]="txt_proveedor_logo"></ion-input>
+      <p>Click en la imágen para escoger logotipo</p>
+      <ion-item>
+        <ion-label color="primary" floating>Nombre del proveedor</ion-label>
+        <ion-input aria-placeholder="Nombre" type="text" [(ngModel)]="txt_proveedor_nombre"></ion-input>
+        <ion-input style="display: none" aria-placeholder="identidad" type="text" [(ngModel)]="txt_proveedor_identidad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Descripción del proveedor</ion-label>
+        <ion-textarea maxlenght="100" aria-placeholder="Nombre" type="text" [(ngModel)]="txt_proveedor_descripcion"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_proveedor_mail"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary" floating>Email paypal (opcional)</ion-label>
+          <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_proveedor_mail_paypal"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" floating>Cuenta bancaria(opcional)</ion-label>
+            <ion-input aria-placeholder="Número" type="number" [(ngModel)]="txt_proveedor_numero_cuenta"></ion-input>
+          </ion-item>
+      <button style="margin-top:12px" ion-button (click)="guardarProveedor()" [disabled]="!reg_status">Guardar</button>
+      <ion-spinner name="crescent" *ngIf="status"></ion-spinner>
+    </div>
+  </ion-content>

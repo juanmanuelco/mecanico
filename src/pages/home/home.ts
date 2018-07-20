@@ -20,6 +20,7 @@ export class HomePage {
   olvP=OlvidoPage
   confP=ConfirmarPage
   status
+  reg_status
   constructor(
     public navCtrl: NavController,
     private alertCtrl: AlertController,
@@ -27,7 +28,8 @@ export class HomePage {
     private validar: ValidacionesProvider,
     private sqlite: SQLite
   ) {
-
+    this.reg_status = true
+    this.status = false
   }
   ionViewDidLoad() {
     this.cargarDB();
@@ -90,6 +92,7 @@ export class HomePage {
   }
 
   iniciarSesion(user, pass) {
+    this.reg_status = false;
     this.status = true;
     this.http.logear_http(user, pass)
       .subscribe((data) => {
@@ -103,7 +106,8 @@ export class HomePage {
             buttons: ['Aceptar']
           }).present();
         }
-        this.status = false
+        this.reg_status = true;
+        this.status = false;
       }, (error) => {
         //Ocurrió un error en el servidor
         this.alertCtrl.create({
@@ -111,7 +115,8 @@ export class HomePage {
           subTitle: this.validar.mensajes('E0').d,
           buttons: ['Aceptar']
         }).present();
-        this.status = false
+        this.reg_status = true;
+        this.status = false;
       })
   }
 

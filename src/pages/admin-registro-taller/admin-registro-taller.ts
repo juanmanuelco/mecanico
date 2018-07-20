@@ -16,9 +16,11 @@ export class AdminRegistroTallerPage {
    txt_taller_mail
    txt_taller_password
    txt_taller_rpassword
-   reg_status
-   txt_taller_ubicacion
+   
+   txt_taller_ubicacion 
    txt_taller_logo
+
+   reg_status
    status
    constructor(
       public navCtrl: NavController,
@@ -125,8 +127,8 @@ export class AdminRegistroTallerPage {
             }).present();
          } else {
             this.alertCtrl.create({
-               title: this.validar.mensajes(data.text()).t,
-               subTitle: this.validar.mensajes(data.text()).d,
+               title: "Error",
+               subTitle: "Esta imágen pesa demasiado, no se puede guardar",
                buttons: ['Aceptar']
             }).present();
          }

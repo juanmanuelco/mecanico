@@ -24,7 +24,7 @@
         <ion-col col-3><i class="mec-nom">{{mecanico.nombre}}</i></ion-col>
         <ion-col col-5>
             <ion-buttons end>
-                <button ion-button icon-only>
+                <button ion-button icon-only (click)="modificarMecanico(mecanico.identidad, mecanico.taller, mecanico.nombre, mecanico.username)">
                   <ion-icon ios="ios-create" md="md-create" name="create"></ion-icon>
                 </button>
                 <button ion-button icon-only color="danger" (click)="eliminarMecanico(mecanico.identidad)">

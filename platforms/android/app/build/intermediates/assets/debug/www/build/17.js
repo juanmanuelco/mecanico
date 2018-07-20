@@ -1,14 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 289:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminModEliMecanicoPageModule", function() { return AdminModEliMecanicoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmarPageModule", function() { return ConfirmarPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_mod_eli_mecanico__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirmar__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AdminModEliMecanicoPageModule = /** @class */ (function () {
-    function AdminModEliMecanicoPageModule() {
+var ConfirmarPageModule = /** @class */ (function () {
+    function ConfirmarPageModule() {
     }
-    AdminModEliMecanicoPageModule = __decorate([
+    ConfirmarPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__admin_mod_eli_mecanico__["a" /* AdminModEliMecanicoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__confirmar__["a" /* ConfirmarPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__admin_mod_eli_mecanico__["a" /* AdminModEliMecanicoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__confirmar__["a" /* ConfirmarPage */]),
             ],
         })
-    ], AdminModEliMecanicoPageModule);
-    return AdminModEliMecanicoPageModule;
+    ], ConfirmarPageModule);
+    return ConfirmarPageModule;
 }());
 
-//# sourceMappingURL=admin-mod-eli-mecanico.module.js.map
+//# sourceMappingURL=confirmar.module.js.map
 
 /***/ })
 

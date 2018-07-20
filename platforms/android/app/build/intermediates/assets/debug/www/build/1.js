@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 297:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListaTallerPageModule", function() { return ListaTallerPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapaObtenerPageModule", function() { return MapaObtenerPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lista_taller__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapa_obtener__ = __webpack_require__(323);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ListaTallerPageModule = /** @class */ (function () {
-    function ListaTallerPageModule() {
+var MapaObtenerPageModule = /** @class */ (function () {
+    function MapaObtenerPageModule() {
     }
-    ListaTallerPageModule = __decorate([
+    MapaObtenerPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__lista_taller__["a" /* ListaTallerPage */],
+                __WEBPACK_IMPORTED_MODULE_2__mapa_obtener__["a" /* MapaObtenerPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__lista_taller__["a" /* ListaTallerPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__mapa_obtener__["a" /* MapaObtenerPage */]),
             ],
         })
-    ], ListaTallerPageModule);
-    return ListaTallerPageModule;
+    ], MapaObtenerPageModule);
+    return MapaObtenerPageModule;
 }());
 
-//# sourceMappingURL=lista-taller.module.js.map
+//# sourceMappingURL=mapa-obtener.module.js.map
 
 /***/ }),
 
-/***/ 309:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaTallerPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapaObtenerPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_validaciones_validaciones__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cambiar_usuario_cambiar_usuario__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__taller_registro_mecanico_taller_registro_mecanico__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__taller_mod_eli_mecanico_taller_mod_eli_mecanico__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_validaciones_validaciones__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -62,32 +60,86 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-var ListaTallerPage = /** @class */ (function () {
-    function ListaTallerPage(navCtrl, navParams, salir) {
+var MapaObtenerPage = /** @class */ (function () {
+    function MapaObtenerPage(navCtrl, navParams, geolocation, alertCtrl, validar, viewCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.salir = salir;
-        this.cambTaller = __WEBPACK_IMPORTED_MODULE_3__cambiar_usuario_cambiar_usuario__["a" /* CambiarUsuarioPage */];
-        this.regMecanico = __WEBPACK_IMPORTED_MODULE_4__taller_registro_mecanico_taller_registro_mecanico__["a" /* TallerRegistroMecanicoPage */];
-        this.modEliMecanico = __WEBPACK_IMPORTED_MODULE_5__taller_mod_eli_mecanico_taller_mod_eli_mecanico__["a" /* TallerModEliMecanicoPage */];
+        this.geolocation = geolocation;
+        this.alertCtrl = alertCtrl;
+        this.validar = validar;
+        this.viewCtrl = viewCtrl;
+        this.geoposicion = '0,0';
     }
-    ListaTallerPage.prototype.logout = function () {
-        this.salir.logout();
+    MapaObtenerPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.geolocation.getCurrentPosition({ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true }).then(function (resp_geo) {
+            var pasCoords = _this.navParams.get('puntos');
+            var coords;
+            if (pasCoords != undefined) {
+                pasCoords = pasCoords.split(';');
+                coords = new google.maps.LatLng(Number(pasCoords[0]), Number(pasCoords[1]));
+            }
+            else
+                coords = new google.maps.LatLng(resp_geo.coords.latitude, resp_geo.coords.longitude);
+            _this.geoposicion = resp_geo.coords.latitude + " ; " + resp_geo.coords.longitude;
+            _this.map = new google.maps.Map(_this.mapElement.nativeElement, {
+                center: coords,
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                fullscreenControl: false,
+                streetViewControl: false
+            });
+            _this.cambioUbicacion(coords);
+            _this.map.addListener('click', function (event) {
+                coords = new google.maps.LatLng(event.latLng.lat(), event.latLng.lng());
+                _this.geoposicion = event.latLng.lat() + " ; " + event.latLng.lng();
+                _this.marker.setMap(null);
+                _this.cambioUbicacion(coords);
+            });
+        }).catch(function (error) {
+            _this.geoposicion = '0.0; 0.0';
+            _this.alertCtrl.create({
+                title: _this.validar.mensajes('E6').t,
+                subTitle: _this.validar.mensajes('E6').d,
+                buttons: [{
+                        text: 'Aceptar',
+                        role: 'cancel',
+                        handler: function (data) {
+                            _this.navCtrl.popToRoot();
+                        }
+                    }]
+            }).present();
+        });
     };
-    ListaTallerPage = __decorate([
+    MapaObtenerPage.prototype.cambioUbicacion = function (coordenadas) {
+        this.marker = new google.maps.Marker({
+            map: this.map,
+            animation: google.maps.Animation.BOUNCE,
+            position: coordenadas
+        });
+    };
+    MapaObtenerPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss({ coordenadas: this.geoposicion });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])("map"),
+        __metadata("design:type", Object)
+    ], MapaObtenerPage.prototype, "mapElement", void 0);
+    MapaObtenerPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lista-taller',template:/*ion-inline-start:"D:\proyectos\mecanico\mecanico_app_v7\mecanico\src\pages\lista-taller\lista-taller.html"*/'<!--\n  Generated template for the ListaAdminPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Menú</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card>\n    <ion-card-header>\n      Administración\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full>Incidencias</button>\n      <button ion-button full [navPush]="cambTaller">Cambiar contraseña</button>\n      <button ion-button full (click)="logout()">Cerrar sesión</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Registros\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full [navPush]="regMecanico">Mecánico</button>\n      <button ion-button full>Stock de repuestos</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Modificacion y eliminación\n    </ion-card-header>\n    <ion-card-content>\n      <button ion-button full [navPush]="modEliMecanico">Mecánico</button>\n      <button ion-button full>Repuestos</button>\n      <button ion-button full>Darse de alta</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n      <ion-card-header>\n        Reportes\n      </ion-card-header>\n      <ion-card-content>\n        <button ion-button full>Incidencias</button>\n        <button ion-button full>Repuestos usados</button>\n      </ion-card-content>\n    </ion-card>\n\n</ion-content>'/*ion-inline-end:"D:\proyectos\mecanico\mecanico_app_v7\mecanico\src\pages\lista-taller\lista-taller.html"*/,
+            selector: 'page-mapa-obtener',template:/*ion-inline-start:"D:\proyectos\mecanico\mecanico_app_v8\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Seleccione su ubicación</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="centrado">\n\n  <label for="" class="centrado">Elija la ubicación del taller y de en aceptar</label>\n\n  <button ion-button (click)="dismiss()">Aceptar</button>\n\n  <div #map id="map"></div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\proyectos\mecanico\mecanico_app_v8\mecanico\src\pages\mapa-obtener\mapa-obtener.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_validaciones_validaciones__["a" /* ValidacionesProvider */]])
-    ], ListaTallerPage);
-    return ListaTallerPage;
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_validaciones_validaciones__["a" /* ValidacionesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+    ], MapaObtenerPage);
+    return MapaObtenerPage;
 }());
 
-//# sourceMappingURL=lista-taller.js.map
+//# sourceMappingURL=mapa-obtener.js.map
 
 /***/ })
 

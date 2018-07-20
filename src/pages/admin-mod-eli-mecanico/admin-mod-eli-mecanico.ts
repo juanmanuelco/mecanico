@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController,AlertController } from 'ionic-angular';
 import { ValidacionesProvider } from '../../providers/validaciones/validaciones';
 import { HttpProvider } from '../../providers/http/http';
 
-@IonicPage()
+@IonicPage() 
 @Component({
   selector: 'page-admin-mod-eli-mecanico',
   templateUrl: 'admin-mod-eli-mecanico.html',
@@ -16,7 +16,8 @@ export class AdminModEliMecanicoPage {
     public navParams: NavParams,
     private validar: ValidacionesProvider,
     private alertCtrl: AlertController,
-    private http: HttpProvider
+    private http: HttpProvider,
+    public modalCtrl: ModalController
   ) {
     this.getMecanicos()
   }
@@ -85,4 +86,14 @@ export class AdminModEliMecanicoPage {
       ]
     }).present()
   }
+  modificarMecanico(identidad, taller, nombre, mail){
+    var modalModificacion = this.modalCtrl.create('AdminModificarMecanicoPage',{
+      identidad:identidad,
+      nombre: nombre, 
+      mail:mail,
+      taller:taller
+    })
+    modalModificacion.present();
+  }
+  
 }

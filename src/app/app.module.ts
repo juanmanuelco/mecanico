@@ -28,6 +28,10 @@ import {RegistroPage} from '../pages/registro/registro'
 import {TallerModEliMecanicoPage} from '../pages/taller-mod-eli-mecanico/taller-mod-eli-mecanico'
 import {TallerRegistroMecanicoPage} from '../pages/taller-registro-mecanico/taller-registro-mecanico'
 
+import {AdminRegistroProveedorPage} from '../pages/admin-registro-proveedor/admin-registro-proveedor'
+import{AdminModEliProveedorPage} from '../pages/admin-mod-eli-proveedor/admin-mod-eli-proveedor'
+import {PrincipalProveedorPage} from '../pages/principal-proveedor/principal-proveedor'
+
 import { HttpProvider } from '../providers/http/http';
 import { ValidacionesProvider } from '../providers/validaciones/validaciones';
 import { ValinternoProvider } from '../providers/valinterno/valinterno';
@@ -49,7 +53,10 @@ import { ValinternoProvider } from '../providers/valinterno/valinterno';
     PrincipalUsuarioPage,
     RegistroPage,
     TallerModEliMecanicoPage,
-    TallerRegistroMecanicoPage
+    TallerRegistroMecanicoPage,
+    AdminRegistroProveedorPage,
+    AdminModEliProveedorPage,
+    PrincipalProveedorPage
   ],
   imports: [
     BrowserModule,
@@ -73,7 +80,10 @@ import { ValinternoProvider } from '../providers/valinterno/valinterno';
     PrincipalUsuarioPage,
     RegistroPage,
     TallerModEliMecanicoPage,
-    TallerRegistroMecanicoPage
+    TallerRegistroMecanicoPage,
+    AdminRegistroProveedorPage,
+    AdminModEliProveedorPage,
+    PrincipalProveedorPage
   ],
   providers: [
     StatusBar,

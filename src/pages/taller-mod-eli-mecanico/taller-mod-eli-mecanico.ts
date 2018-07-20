@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, ModalController } from 'ionic-angular';
 
 import { ValidacionesProvider } from '../../providers/validaciones/validaciones';
 import { HttpProvider } from '../../providers/http/http';
@@ -20,7 +20,8 @@ export class TallerModEliMecanicoPage {
     private validar: ValidacionesProvider,
     private alertCtrl: AlertController,
     private http: HttpProvider,
-    private sqlite: SQLite
+    private sqlite: SQLite,
+    public modalCtrl: ModalController
   ) {
     this.sqlite.create({
       name: 'mecanico.db',
@@ -113,5 +114,14 @@ export class TallerModEliMecanicoPage {
         }
       ]
     }).present()
+  }
+  modificarMecanico(identidad, taller, nombre, mail){
+    var modalModificacion = this.modalCtrl.create('TallerModificarMecanicoPage',{
+      identidad:identidad,
+      nombre: nombre, 
+      mail:mail,
+      taller:taller
+    })
+    modalModificacion.present();
   }
 }

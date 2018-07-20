@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{this.txt_mecanico_nombre}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="centrado">
+  <h1>Modificación de mecánico</h1>
+  <ion-item>
+    <ion-label color="primary" floating>Nombre del mecánico</ion-label>
+    <ion-input aria-placeholder="Nombre" type="text" [(ngModel)]="txt_mecanico_nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Email del mecánico</ion-label>
+    <ion-input aria-placeholder="Email" type="email" [(ngModel)]="txt_mecanico_mail"></ion-input>
+  </ion-item>
+  <div class="div_margen_bt">
+    <button ion-button full (click)="guardar()" [disabled]="!reg_status">Guardar</button>
+  </div>
+  <ion-spinner name="crescent" *ngIf="status"></ion-spinner>
+</ion-content>

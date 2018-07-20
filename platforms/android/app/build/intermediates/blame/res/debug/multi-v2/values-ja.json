@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ja\\values-ja.xml",
+            "outputFile": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ja\\values-ja.xml",
             "map": [
                 {
-                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v7\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-ja\\multiimagechooser_strings_ja.xml",
+                    "source": "D:\\proyectos\\mecanico\\mecanico_app_v8\\mecanico\\platforms\\android\\app\\src\\main\\res\\values-ja\\multiimagechooser_strings_ja.xml",
                     "from": {
                         "startLines": "4,3,2,5",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "179,116,55,258",
+                        "startOffsets": "183,119,57,263",
                         "endColumns": "78,62,60,73",
-                        "endOffsets": "253,174,111,327"
+                        "endOffsets": "257,177,113,332"
                     },
                     "to": {
                         "startLines": "21,22,23,24",

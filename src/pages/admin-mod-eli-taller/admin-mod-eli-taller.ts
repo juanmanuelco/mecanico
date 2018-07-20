@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ModalController, AlertController } from 'ionic-angular';
 import { ValidacionesProvider } from '../../providers/validaciones/validaciones';
 import { HttpProvider } from '../../providers/http/http';
 
-
+ 
 @IonicPage()
 @Component({
   selector: 'page-admin-mod-eli-taller',
   templateUrl: 'admin-mod-eli-taller.html',
 })
-export class AdminModEliTallerPage {
+export class AdminModEliTallerPage { 
   talleres: any
   parametro = "";
   constructor(
@@ -17,7 +17,8 @@ export class AdminModEliTallerPage {
     public navParams: NavParams,
     private validar: ValidacionesProvider,
     private alertCtrl: AlertController,
-    private http: HttpProvider
+    private http: HttpProvider,
+    public modalCtrl: ModalController
   ) {
     this.getTalleres()
   }
@@ -84,5 +85,16 @@ export class AdminModEliTallerPage {
         }
       ]
     }).present()
+  }
+  modificarTaller(identidad, nombre, imagen, ubicacion, descripcion, mail){
+    var modalModificacion = this.modalCtrl.create('AdminModificarTallerPage',{
+      identidad:identidad,
+      nombre: nombre, 
+      imagen:imagen,
+      ubicacion:ubicacion,
+      descripcion:descripcion,
+      mail:mail
+    })
+    modalModificacion.present();
   }
 }

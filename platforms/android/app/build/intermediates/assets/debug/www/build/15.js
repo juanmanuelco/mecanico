@@ -1,14 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 291:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminRegistroMecanicoPageModule", function() { return AdminRegistroMecanicoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrincipalAdminPageModule", function() { return PrincipalAdminPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_registro_mecanico__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__principal_admin__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AdminRegistroMecanicoPageModule = /** @class */ (function () {
-    function AdminRegistroMecanicoPageModule() {
+var PrincipalAdminPageModule = /** @class */ (function () {
+    function PrincipalAdminPageModule() {
     }
-    AdminRegistroMecanicoPageModule = __decorate([
+    PrincipalAdminPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__admin_registro_mecanico__["a" /* AdminRegistroMecanicoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__principal_admin__["a" /* PrincipalAdminPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__admin_registro_mecanico__["a" /* AdminRegistroMecanicoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__principal_admin__["a" /* PrincipalAdminPage */]),
             ],
         })
-    ], AdminRegistroMecanicoPageModule);
-    return AdminRegistroMecanicoPageModule;
+    ], PrincipalAdminPageModule);
+    return PrincipalAdminPageModule;
 }());
 
-//# sourceMappingURL=admin-registro-mecanico.module.js.map
+//# sourceMappingURL=principal-admin.module.js.map
 
 /***/ })
 

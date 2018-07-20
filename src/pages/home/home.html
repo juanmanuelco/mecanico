@@ -18,8 +18,8 @@
         <ion-label color="primary" floating>Contraseña</ion-label>
         <ion-input  aria-placeholder="Contraseña" [(ngModel)]="txt_password_login" type="password"></ion-input>
       </ion-item>
-      <div class="div_margen_bt">
-        <button class="btn_home" ion-button full (click)="logear()">Login</button>
+      <div class="div_margen_bt" >
+        <button class="btn_home" [disabled]="!reg_status" ion-button full (click)="logear()">Login</button>
       </div>
       <div class="div_margen_bt">
         <button class="btn_home" ion-button full [navPush]="regP">Registrarme</button>
@@ -36,4 +36,4 @@
       <ion-spinner name="crescent" *ngIf="status"></ion-spinner>
     </div>
   </div>
-</ion-content>
+</ion-content> 

@@ -3,6 +3,7 @@ import { PrincipalAdminPage } from '../../pages/principal-admin/principal-admin'
 import { PrincipalMecanicoPage } from '../../pages/principal-mecanico/principal-mecanico';
 import { PrincipalTallerPage } from '../../pages/principal-taller/principal-taller';
 import { PrincipalUsuarioPage } from '../../pages/principal-usuario/principal-usuario';
+import {PrincipalProveedorPage} from '../../pages/principal-proveedor/principal-proveedor'
 import { AlertController, LoadingController} from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
@@ -42,17 +43,21 @@ export class ValidacionesProvider {
     if(rol==3)
       pagina= PrincipalMecanicoPage
     if(rol==4)
-      pagina=PrincipalUsuarioPage
+      pagina=PrincipalProveedorPage
+    if(rol==5)
+      pagina= PrincipalUsuarioPage
     return pagina
   } 
   Rol(data){
-    var res=4
+    var res=5
     if (data.esAdministrador)
       res= 1
     if (data.esTaller)
       res= 2
     if (data.esMecanico)
       res= 3
+    if (data.esProveedor)
+      res= 4
     return res
   }
   validar_vacios(inputs) {
